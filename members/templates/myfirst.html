@@ -1,9 +1,48 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "master.html" %}
 
+
+
+{% block title %}
 <h1>Hello World!</h1>
+
+{% endblock %}
+
+{% block content %}
+{% with engName="Henry" %}
 <p>Welcome to my first Django project!</p>
 
-</body>
-</html>
+My name is {{ firstname }}
+
+<br>
+<br>
+
+My english name is {{ engName }}, this is created with "with" and "endwith"
+<br>
+<br>
+
+{% endwith %}
+
+<ul>
+    {% for x in mymembers %}
+      <li>{{ x.firstname }}</li>
+    {% endfor %}
+</ul>
+
+
+
+{% if greeting == 1 %}
+  <h1>Hello</h1>
+{% else %}
+  <h1>Bye</h1>
+{% endif %}
+
+
+{% include "footer.html"%}
+
+{% endblock %}
+
+
+
+
+
+

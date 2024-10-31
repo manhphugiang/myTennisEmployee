@@ -32,3 +32,15 @@ def testing(request):
     'fruits': ['Apple', 'Banana', 'Cherry'],   
   }
   return HttpResponse(template.render(context, request))
+
+
+def myfirst(request):
+    mymembers= Member.objects.all().values()
+    template= loader.get_template("myfirst.html")
+    context = {
+        'firstname' : "Manh Phu Giang",
+        'mymembers': mymembers,
+        'greeting' : 1,
+    }
+    return HttpResponse(template.render(context, request))
+

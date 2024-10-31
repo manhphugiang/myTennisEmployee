@@ -7,5 +7,6 @@ urlpatterns= [
     path('members/', views.members, name='members'),
 
     path('members/details/<int:id>', views.details),
-    path('testing/', views.testing, name='testing'),    
+    path('testing/', views.testing, name='testing'),  
+    path('myfirst/', views.myfirst, name="passing the context name")  
 ]
