@@ -3,7 +3,10 @@ This is a small project that showcases my skills in Python—Django framework as
 
 [Watch my demo video](https://youtu.be/KmABQPCtEow)
 
+Even though I can add a lot more like load balancer or improve HTTP to HTTPS, route53 for a domain. But this application is to showcase my proficiency in Python.
 
+
+![System](images/Django.drawio.png)
 
 
 
